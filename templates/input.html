@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #f8d7da;
+    }
+
+    .input-box {
+      width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .input-box label {
+      display: inline-block;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      text-align: left;
+      width: 300px;
+    }
+
+    .input-box input[type="text"] {
+      width: 250px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 2px solid #dc3545;
+      border-radius: 3px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
+    }
+
+    .input-box input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .input-box input[type="submit"]:hover {
+      background-color: #c82333;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="input-box">
+    <h2>Input Page</h2>
+    
+    <form action="/predict" method="post">
+      <label for="gender"><b>Gender:</b>[1-male/0-female]</label><input type="text" id="gender" name="gender" ><br><br>
+
+      <label for="age"><b>Age:</b></label><input type="text" id="age" name="age" ><br><br>
+
+      <label for="smoking"><b>Smoking</b>[1-no/2-yes]:</label><input type="text" id="smoking" name="smoking" ><br><br>
+
+      <label for="peer_pressure"><b>Peer Pressure</b>[1-no/2-yes]:</label><input type="text" id="peer_pressure" name="peer_pressure" ><br><br>
+
+      <label for="chronic_disease"><b>chronic disease</b>[1-no/2-yes]:</label><input type="text" id="chronic_disease" name="chronic_disease" ><br><br>
+
+      <label for="fatigue"><b>Fatigue</b>[1-no/2-yes]:</label><input type="text" id="fatigue" name="fatigue" ><br><br>
+
+      <label for="allergy"><b>Allergy</b>[1-no/2-yes]:</label><input type="text" id="allergy" name="allergy" ><br><br>
+
+      <label for="wheezing"><b>Wheezing</b>[1-no/2-yes]:</label><input type="text" id="wheezing" name="wheezing" ><br><br>
+
+      <label for="coughing"><b>Coughing</b>[1-no/2-yes]:</label><input type="text" id="coughing" name="coughing" ><br><br>
+
+      <label for="breath"><b>Shortness of breath</b>[1-no/2-yes]:</label><input type="text" id="breath" name="breath" ><br><br>
+
+      <label for="swallow"><b>Swallowing difficulty</b>[1-no/2-yes]:</label><input type="text" id="swallow" name="swallow" ><br><br>
+
+      <label for="chest"><b>Chest pain</b>[1-no/2-yes]:</label><input type="text" id="chest" name="chest" ><br><br>
+
+      <input type="submit" value="Submit">
+
+    </form>
+ </div>
+</body>
+</html>
+
+
+
